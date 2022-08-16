@@ -6,12 +6,18 @@
 // 782 -> 8
 // 918 -> 1
 
-Console.WriteLine("Введите трехзначное число: ");
-    while(true)
+internal class Program
+{
+    private static void Main(string[] args)
     {
-        string input = Console.ReadLine();
-        if(!input.Equals("exit"))
-        Console.WriteLine("{0} -> {1}",input, input[1]);
-         else
-            break;
+        Console.WriteLine("Введите трехзначное число: ");
+        while (true)
+        {
+            string input = Console.ReadLine();
+            if (!input.Equals("exit"))
+                Console.WriteLine($"{(object)input} -> {(object)input[1]}");
+            else
+                break;
+        }
     }
+}
